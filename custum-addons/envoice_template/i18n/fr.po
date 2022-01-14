@@ -1,0 +1,51 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* envoice_template
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210609\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-03 11:10+0000\n"
+"PO-Revision-Date: 2021-09-03 11:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: envoice_template
+#: model_terms:ir.ui.view,arch_db:envoice_template.report_invoice_document_inherit
+#: model_terms:ir.ui.view,arch_db:envoice_template.report_saleorder_inherit
+msgid "<strong>Signature</strong>"
+msgstr ""
+
+#. module: envoice_template
+#: model_terms:ir.ui.view,arch_db:envoice_template.report_invoice_document_inherit
+#: model_terms:ir.ui.view,arch_db:envoice_template.report_saleorder_inherit
+msgid "Arrested at the sum of :"
+msgstr "Arrêté à la somme de :"
+
+#. module: envoice_template
+#: model:ir.model,name:envoice_template.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: envoice_template
+#: model:ir.model.fields,field_description:envoice_template.field_res_partner__nif
+#: model:ir.model.fields,field_description:envoice_template.field_res_users__nif
+msgid "NIF"
+msgstr ""
+
+#. module: envoice_template
+#: model:ir.model.fields,field_description:envoice_template.field_res_partner__rcs
+#: model:ir.model.fields,field_description:envoice_template.field_res_users__rcs
+msgid "RCS"
+msgstr ""
+
+#. module: envoice_template
+#: model:ir.model.fields,field_description:envoice_template.field_res_partner__stat
+#: model:ir.model.fields,field_description:envoice_template.field_res_users__stat
+msgid "STAT"
+msgstr ""

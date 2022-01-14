@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            action='payment.action_payment_transaction'
+            id='confirm_payment_transaction_menu'
+            parent='account.menu_finance_receivables'
+            sequence='20' />
+    </data>
+</odoo>

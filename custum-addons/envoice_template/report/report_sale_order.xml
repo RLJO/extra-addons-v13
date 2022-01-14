@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_saleorder_inherit" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[hasclass('page')]/table/thead/tr/th[@name='th_taxes']" position="replace">
+            </xpath>
+            <xpath expr="//div[hasclass('page')]/table/tbody/t[@t-foreach='doc.order_line']/tr/t/td[@name='td_taxes']" position="replace">
+            </xpath>
+            <xpath expr="//div[@name='so_total_summary']" position="after">
+                <p>
+                    <i>Arrêtée à la somme de :
+                        <strong>
+                            <t t-esc="doc.currency_id.amount_to_text(doc.amount_total)"/>
+                        </strong>
+                    </i>
+                    <p>
+                    <b>Methodes de paiement :</b> <br />
+                        - Par virement bancaire sur le compte de Taralila Marketing : BNI 00005 00001 71497240001 84 <br />
+                        - Par chèque au nom de Taralila Marketing <br />
+                        - Par Orange money : 032 05 357 33 au nom de Taralila Marketing <br />
+                        - En espèce <br />
+                    </p>
+                </p>
+            </xpath>
+            <xpath expr="//div[@t-if='doc.signature']" position="after">
+                <div class="mt32 ml64 mr4" name="company_signature">
+                    <div class="offset-8 text-center">
+                        <strong>Signature</strong>
+                    </div>
+                    <div class="offset-8">
+                        <img src="/envoice_template/static/src/img/signature.png" style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
